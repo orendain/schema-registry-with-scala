@@ -10,6 +10,8 @@ homepage := Some(url("https://github.com/orendain/schema-registry-with-scala"))
 organizationHomepage := Some(url("https://github.com/orendain/schema-registry-with-scala"))
 licenses := Seq(("Apache License 2.0", url("https://www.apache.org/licenses/LICENSE-2.0")))
 
+resolvers += "Hortonworks Nexus" at "http://repo.hortonworks.com/content/repositories/releases"
+
 libraryDependencies ++= Seq(
   ("com.hortonworks.registries" % "schema-registry-serdes" % "0.3.0.3.0.1.1-5"),
 //    .exclude("commons-beanutils", "commons-beanutils") // vs itself - commons-beanutils/commons-beanutils-core
