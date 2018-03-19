@@ -66,7 +66,7 @@ object SchemaRegistrar {
       .compatibility(schemaTypeCompatibility)
       .build()
 
-    // Resgister the new schema metadata using an instance of a Schema Registry Client
+    // Register the new schema metadata using an instance of a Schema Registry Client
     val metadataRegistrationResult = schemaRegistryClient.registerSchemaMetadata(schemaMetadata)
     log.info(s"Schema metadata was registered with ID: $metadataRegistrationResult")
 

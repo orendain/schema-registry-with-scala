@@ -1,7 +1,7 @@
 
 name := "schema-registry-with-scala"
 
-version := "0.1"
+version := "0.2"
 scalaVersion := "2.12.4"
 
 description := """Trucking IoT on HDF"""
@@ -13,11 +13,7 @@ licenses := Seq(("Apache License 2.0", url("https://www.apache.org/licenses/LICE
 resolvers += "Hortonworks Nexus" at "http://repo.hortonworks.com/content/repositories/releases"
 
 libraryDependencies ++= Seq(
-  ("com.hortonworks.registries" % "schema-registry-serdes" % "0.3.0.3.0.1.1-5"),
-//    .exclude("commons-beanutils", "commons-beanutils") // vs itself - commons-beanutils/commons-beanutils-core
-//    .exclude("commons-collections", "commons-collections") // vs itself - commons-beanutils/commons-beanutils-core
-//    .exclude("org.springframework", "spring-aop"), // vs itself - aopalliance/intercept/ConstructorInvocation.class
-
+  "com.hortonworks.registries" % "schema-registry-serdes" % "0.3.0.3.0.1.1-5",
   "javax.xml.bind" % "jaxb-api" % "2.3.0",
 
   "com.typesafe" % "config" % "1.3.1",
